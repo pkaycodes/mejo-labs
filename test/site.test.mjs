@@ -53,10 +53,14 @@ test("every local image, stylesheet and script exists", async () => {
 test("selected work is visible and links to real public destinations", () => {
   assert.match(html, /02 \/ SELECTED WORK/);
   assert.match(html, />Kae</);
+  assert.match(html, />Sharkbook</);
+  assert.match(html, />Sukuu</);
   assert.match(html, />Shipcheck</);
   assert.match(html, />Sikapos</);
   assert.match(html, />Same Page</);
   assert.match(html, /https:\/\/pkaycodes\.github\.io\/kae\/\?demo=1/);
+  assert.match(html, /https:\/\/pkaycodes\.github\.io\/sharkbook\/\?demo=1/);
+  assert.match(html, /https:\/\/pkaycodes\.github\.io\/sukuu\/\?demo=1/);
   assert.match(html, /https:\/\/github\.com\/pkaycodes\/shipcheck/);
   assert.match(html, /https:\/\/github\.com\/pkaycodes\/sikapos/);
   assert.match(html, /https:\/\/github\.com\/pkaycodes\/same-page/);

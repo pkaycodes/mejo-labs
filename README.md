@@ -17,7 +17,7 @@ A static, dependency-free studio site built around the Mejo Labs identity:
 - a sharp, typographic hero with a working code-card tab interaction;
 - services, process, team and selected work;
 - direct email, phone, WhatsApp and GitHub contact routes;
-- real project links for Kae, Shipcheck, Sikapos and Same Page;
+- real project links for Kae, Sharkbook, Sukuu, Shipcheck, Sikapos and Same Page;
 - responsive navigation, keyboard support, visible focus states and reduced-motion support;
 - social metadata, structured data, a sitemap and a custom 404 page.
 
