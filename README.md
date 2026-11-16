@@ -8,22 +8,22 @@ The online home of **Mejo Labs**, a software studio in Accra, Ghana.
 [![Deploy](https://github.com/pkaycodes/mejo-labs/actions/workflows/deploy.yml/badge.svg)](https://github.com/pkaycodes/mejo-labs/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-0B0D0C.svg)](LICENSE)
 
-![Mejo Labs](assets/mejo-og-1200x630.png)
+![Mejo Labs — Software that fits your business](assets/mejo-og-1200x630.png)
 
 ## What this is
 
-A static, dependency-free studio site built around the Mejo Labs identity:
+A light, focused studio site written for business owners rather than developers:
 
-- a sharp, typographic hero with a working code-card tab interaction;
-- services, process, team and selected work;
-- direct email, phone, WhatsApp and GitHub contact routes;
-- real project links for Kae, Sharkbook, Sukuu, Shipcheck, Sikapos and Same Page;
+- a clear hero that explains the offer in one screen;
+- four services: custom software, business systems, integrations and IT support;
+- selected work with real project links, including Adom Hospital HMS, Kae, PKLink, Efie, Sukuu, Sharkbook, Edgebook, MotorVault, Sikapos and AM Homecare;
+- a plain-language process, a short introduction to the team and direct email, phone, WhatsApp and GitHub routes;
 - responsive navigation, keyboard support, visible focus states and reduced-motion support;
 - social metadata, structured data, a sitemap and a custom 404 page.
 
 The site is plain HTML, CSS and JavaScript. There is no framework, build step, tracker or
-third-party script. That is deliberate: the studio's own site should load fast, work from
-any static host, and remain easy to inspect.
+third-party runtime script. That is deliberate: the studio's own site should load fast, work
+from any static host, and remain easy to inspect.
 
 ## Run it locally
 
@@ -40,20 +40,20 @@ Open <http://localhost:4173>.
 npm test
 ```
 
-The Node test suite checks the document head, canonical and social metadata, every
-internal anchor and local asset, the selected-work links, the real contact routes,
-accessibility affordances, the reduced-motion fallback, and that no analytics or
-remote runtime scripts have crept in.
+The Node test suite checks the document head, canonical and social metadata, every internal
+anchor and local asset, the selected-work links, the real contact routes, accessibility
+affordances, the reduced-motion fallback, and that no analytics or remote runtime scripts have
+crept in.
 
-CI runs the suite on every push and pull request. Deployment runs the same tests,
-copies the static files into an artifact, and publishes it to GitHub Pages.
+CI runs the suite on every push and pull request. Deployment runs the same tests, copies the
+static files into an artifact, and publishes it to GitHub Pages.
 
 ## Structure
 
 ```text
 index.html          the full page
 styles.css          the design system and responsive layout
-main.js             mobile navigation, tabs, clock and active-section state
+main.js             sticky header, mobile navigation and active-section state
 assets/             logo, favicon, social card and self-hosted Geist fonts
 test/site.test.mjs  dependency-free site checks
 404.html            branded not-found page
@@ -67,7 +67,7 @@ sitemap.xml         canonical page list
 every release should leave the work higher than it found it.
 
 - Ink `#0B0D0C` · Bone `#F1EEE5` · Lime `#C9F45C` · Sage `#5F685C`
-- Geist and Geist Mono, self-hosted under the SIL Open Font License.
+- Geist, self-hosted under the SIL Open Font License.
 - *Better, every build.*
 
 ## Deployment
@@ -79,7 +79,7 @@ Pushes to `main` deploy through `.github/workflows/deploy.yml`. The workflow:
 3. uploads the artifact and deploys it to GitHub Pages.
 
 Any static host works: serve the repository root, or upload `index.html`, `styles.css`,
-`main.js` and `assets/`.
+`main.js`, `404.html`, `robots.txt`, `sitemap.xml` and `assets/`.
 
 ## Contact
 
